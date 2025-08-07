@@ -39,13 +39,19 @@ const ProjectDetailPage: React.FC = () => {
       <div className="bg-[#161B22] border border-gray-800 rounded-2xl shadow-lg overflow-hidden p-6 sm:p-8 lg:p-12">
         <div>
           {/* Header: Name and Logo */}
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 sm:gap-8 mb-8">
-            <div className="flex-grow">
-              <h1 className="text-4xl lg:text-5xl font-extrabold text-white">{project.name}</h1>
+          {project.logoIncludesName ? (
+            <div className="flex justify-start mb-8">
+              <project.logo className="h-24 w-auto" aria-label={`${project.name} logo`} />
             </div>
-            {/* El logo que faltaba en tu captura de pantalla también está aquí */}
-            <project.logo className="h-24 w-24 flex-shrink-0" aria-label={`${project.name} logo`} />
-          </div>
+          ) : (
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 sm:gap-8 mb-8">
+              <div className="flex-grow">
+                <h1 className="text-4xl lg:text-5xl font-extrabold text-white">{project.name}</h1>
+              </div>
+              <project.logo className="h-24 w-24 flex-shrink-0" aria-label={`${project.name} logo`} />
+            </div>
+          )}
+
 
           {/* Content: Description and Features */}
           <div>
@@ -58,6 +64,12 @@ const ProjectDetailPage: React.FC = () => {
                 </li>
               ))}
             </ul>
+
+            {project.extraParagraph && (
+              <p className="mt-6 text-lg text-gray-300 leading-relaxed text-justify">
+                {project.extraParagraph}
+              </p>
+            )}
           </div>
         </div>
 
@@ -122,7 +134,7 @@ const ProjectDetailPage: React.FC = () => {
                         <LinkedInIcon className="w-7 h-7"/>
                       </a>
                     </div>
-                    <p className="mt-3 text-gray-300 text-sm flex-grow">
+                    <p className="mt-3 text-gray-300 text-sm flex-grow text-justify">
                       {founder.description}
                     </p>
                   </div>

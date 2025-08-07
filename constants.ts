@@ -1,7 +1,5 @@
 import { ProjectType } from './types';
-import { EcoTrackLogo, MindWellLogo, FinanzaHoyLogo, EducaFuturoLogo, Salud360Logo } from './components/Icons';
-
-const PDF_SAMPLE_URL = 'https://www.jugandoainvertir.com.ar/descargas/Padre-Rico-Padre-Pobre.pdf';
+import { quix, talentum, DomusAI, Bildin, Salud360Logo } from './components/Icons';
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -17,15 +15,17 @@ export const PROJECTS: ProjectType[] = [
       "Backed by UTEC Ventures, Snitch Ventures, and angel investors",
       "Founders: ex-Zoho COO and $1.4M ARR spin-off CEO; serial entrepreneurs with SaaS and AI experience"
     ],
-    logo: FinanzaHoyLogo, 
+    extraParagraph: 'Our vision: to become the AI-powered operating system for buildings — enabling fully automated, scalable property management for a vertical future.',
+    logoIncludesName: true,
+    logo: DomusAI, 
     calendlyLink: 'https://calendly.com/utec-ventures/domus-ai-intro',
     teamSize: 2,
     founders: [
-      { name: 'Founder Uno', title: 'CEO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=domus1', linkedinUrl: '#', description: 'Lidera la visión estratégica y el desarrollo de negocio, aportando una profunda experiencia en el sector inmobiliario y la gestión de propiedades.' },
-      { name: 'Founder Dos', title: 'CTO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=domus2', linkedinUrl: '#', description: 'Arquitecto de la tecnología detrás de Domus AI, especializado en inteligencia artificial y desarrollo de software para la automatización de procesos complejos.' },
+      { name: 'Samuele Soto Cannatà', title: 'CEO & Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQErR1xGAZWBBQ/profile-displayphoto-crop_800_800/B4EZf.w4O8H4AI-/0/1752325918783?e=1757548800&v=beta&t=3jLGqlruKARrnv5wCQ0rXWZzrx48Hw1_O7FliUrEFcw', linkedinUrl: 'https://www.linkedin.com/in/samuelescb/', description: 'Delivering AI agents to automate every building in the world.' },
+      { name: 'Piero Luis Arévalo', title: 'COO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQHdDeXlvxVdkA/profile-displayphoto-shrink_800_800/B4EZWz5pVAGgBs-/0/1742479988385?e=1757548800&v=beta&t=JrgsJVWe1i_2A5NsUON6qyZPV_si98pjc_WURRQFRzA', linkedinUrl: 'https://www.linkedin.com/in/piero-luis-ar%C3%A9valo-355ab5143?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2evM2dTwR6CXE37tI3Nrsg%3D%3D', description: 'With over 10 years of experience in senior management roles, Scrum Master, and Product Owner, I have led digitization and digital transformation projects, with a special focus on optimizing processes in marketing, sales, and operations departments at companies of various sizes. My experience in agile project management is complemented by a strong specialization in CRM and CX implementation strategies. I currently serve as partner and COO at Grupo M4G, a Zoho Corporation Premium Partner in Peru, and as COO at Domus AI, where I lead the operation and creation of innovative technologies in building management.' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    pdfUrl: PDF_SAMPLE_URL,
+    imageUrl: '/src/assets/visual/visual_domus.png',
+    pdfUrl: '',
   },
   {
     id: 2,
@@ -39,15 +39,18 @@ export const PROJECTS: ProjectType[] = [
       "Control de inventario de materiales.",
       "Reportes de rendimiento detallados."
     ],
-    logo: EducaFuturoLogo,
+    extraParagraph: '',
+    logoIncludesName: true,
+    logo: Bildin,
     calendlyLink: 'https://calendly.com/utec-ventures/bildin-intro',
     teamSize: 2,
     founders: [
-      { name: 'Matías Arana Cisneros', title: 'Co-founder', imageUrl: 'https://images.unsplash.com/photo-1624886202521-3a5b3a1a9b1c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', linkedinUrl: 'https://www.linkedin.com/in/matiasaranacisneros/', description: 'Experto en operaciones de construcción, enfocado en optimizar la productividad y la gestión de proyectos a través de la tecnología.' },
-      { name: 'Ana Gamarra', title: 'Co-founder', imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', linkedinUrl: 'https://www.linkedin.com/in/anagamarra/', description: 'Impulsa la estrategia de producto y la experiencia de usuario en Bildin, asegurando que la plataforma sea intuitiva y resuelva problemas reales del sector.' },
+      { name: 'Matías Calmet Arana Cisneros', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQENSbTTnyi_mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728092120239?e=1757548800&v=beta&t=aoldIGKKonk7_I_2o1UT-vF_Enp96Ti4kqPvNj1tQ9U', linkedinUrl: 'https://www.linkedin.com/in/mat%C3%ADas-calmet-arana-cisneros-a1107b177/', description: 'Civil engineer co-founder of Bildin, software as a service that integrates and optimizes planning , cost and quality processes for building projects in the construction phase.' },
+      { name: 'Ana Paula Gamarra Casalino', title: 'Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4E03AQEXHeEG5DU77g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1642873282331?e=1757548800&v=beta&t=u3MG5wYLRTYacUAyrWtKieUzg0jnRP85qQSbng3ePIo', linkedinUrl: 'https://www.linkedin.com/in/anagamarra/', description: '' },
+      { name: 'Alejandro Goicochea', title: 'CTO', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQFJGmKfjdC4rQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721696619751?e=1757548800&v=beta&t=SFZ1QbSXiN7aQyPVqZy_d2_jOwgevoBrbi2ozzD90oI', linkedinUrl: 'https://www.linkedin.com/in/alejandrogh97/', description: "I am a software developer with over 3 years of experience and outstanding skills in critical thinking and problem-solving. Additionally, I hold a Bachelor's degree in Computer Science and possess an advanced level of English. My interest lies in participating in software development projects where I can be involved in the entire product creation process and deliver value to customers." },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    pdfUrl: PDF_SAMPLE_URL,
+    imageUrl: '/src/assets/visual/visual_bildin.png',
+    pdfUrl: '',
   },
   {
     id: 3,
@@ -61,16 +64,18 @@ export const PROJECTS: ProjectType[] = [
       "Interacción inicial vía chatbots.",
       "Ahorro significativo en costos de contratación."
     ],
-    logo: MindWellLogo,
+    extraParagraph: '',
+    logoIncludesName: true,
+    logo: talentum,
     calendlyLink: 'https://calendly.com/utec-ventures/talentum-intro',
     teamSize: 3,
     founders: [
-      { name: 'Founder Tres', title: 'CEO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=talentum1', linkedinUrl: '#', description: 'Estratega de negocio con experiencia en recursos humanos, dedicado a revolucionar la adquisición de talento con tecnología.' },
-      { name: 'Founder Cuatro', title: 'Lead AI Engineer', imageUrl: 'https://i.pravatar.cc/150?u=talentum2', linkedinUrl: '#', description: 'Mente técnica detrás de "Sara", el motor de IA de Talentum. Apasionado por el machine learning y el procesamiento de lenguaje natural.' },
-      { name: 'Founder X', title: 'Product Manager', imageUrl: 'https://i.pravatar.cc/150?u=talentum3', linkedinUrl: '#', description: 'Responsable de la hoja de ruta del producto, asegurando que Talentum evolucione para satisfacer las necesidades del mercado.' },
+      { name: 'Joaquin Titievsky', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQHWglsLqM_Qaw/profile-displayphoto-shrink_800_800/B4DZV3yf62G8Ac-/0/1741471481910?e=1757548800&v=beta&t=Wjfd7SgPxY-zLgJC4ZZwR6ZpmnaYYBZPtBpc30uaQc8', linkedinUrl: 'https://www.linkedin.com/in/joaquin-titievsky/', description: '' },
+      { name: 'Ionatan Engelsberg', title: 'CTO & Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQHvQl2mjnlSEw/profile-displayphoto-shrink_800_800/B4DZV3ziXWHAAg-/0/1741471754231?e=1757548800&v=beta&t=fw-e8aPFmRpOgL2R5TXd_Ls2tEuGNCuy4HGvheef_cI', linkedinUrl: 'https://www.linkedin.com/in/ionatan-engelsberg/', description: 'With a strong background in software engineering and hands-on experience in machine learning, I am passionate about bridging the gap between data engineering and AI to deliver data-driven real value. My journey has equipped me with expertise in API development, database design and management, and developing cutting-edge computer vision deep learning models, RAG chatbots, and end-to-end data pipelines.' },
+      { name: 'Martin Lipovetzky', title: 'Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQEoaRaMvFHGNA/profile-displayphoto-shrink_800_800/B4DZWBgQUIHkAc-/0/1741634471636?e=1757548800&v=beta&t=kOWhh8Qq_Y-sjOL2sUOZ4mqTb52vGUBWlzqa-MFBzLw', linkedinUrl: 'https://www.linkedin.com/in/martin-lipovetzky-b23b5823b/', description: '' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    pdfUrl: PDF_SAMPLE_URL,
+    imageUrl: '/src/assets/visual/visual_talentum.png',
+    pdfUrl: '',
   },
   {
     id: 4,
@@ -84,21 +89,47 @@ export const PROJECTS: ProjectType[] = [
       "Videos y materiales generados por IA.",
       "Micro-learning para mayor retención."
     ],
-    logo: EcoTrackLogo,
+    extraParagraph: '',
+    logoIncludesName: true,
+    logo: quix,
     calendlyLink: 'https://calendly.com/utec-ventures/quix-intro',
     teamSize: 4,
     founders: [
-      { name: 'Founder Cinco', title: 'Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=quix1', linkedinUrl: '#', description: 'Experto en pedagogía y tecnología educativa, enfocado en hacer el aprendizaje corporativo más efectivo y accesible.' },
-      { name: 'Founder Seis', title: 'Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=quix2', linkedinUrl: '#', description: 'Desarrollador principal de la plataforma de IA para la creación de contenido, transformando texto en experiencias de aprendizaje multimedia.' },
-      { name: 'Founder Siete', title: 'Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=quix3', linkedinUrl: '#', description: 'Lidera las operaciones y alianzas estratégicas, asegurando que Quix llegue a empresas que necesitan innovar en su capacitación.' },
-      { name: 'Founder Y', title: 'UX/UI Designer', imageUrl: 'https://i.pravatar.cc/150?u=quix4', linkedinUrl: '#', description: 'Diseña la experiencia de usuario en WhatsApp, garantizando que los micro-cursos sean intuitivos y atractivos para los empleados.' },
+      { name: 'Ignacio Barrea', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQEj2HCQiN_nJg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718273951825?e=1757548800&v=beta&t=tce9LxjxwgMZDm7c2wNoH6MEoKeOA1NzJ4iAAAGF_1s', linkedinUrl: 'https://www.linkedin.com/in/ignaciobarrea/', description: "At Quix, we're pioneering AI-enhanced educational solutions that transform how individuals and organizations learn and grow. My expertise in product development and strategic planning, honed over a decade in tech startups, is central to our mission of advancing learning technologies. Our approach is rooted in agile methodologies and data-driven decision-making, ensuring that our offerings are both innovative and effective." },
+      { name: 'Carlos Alarcón', title: 'CTO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQE_SuNj6_BDGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705954672368?e=1757548800&v=beta&t=p-55WIUA-qa6DW96Cm2-kQozlDnjTRNvvdYZtlqUt9k', linkedinUrl: 'https://www.linkedin.com/in/alarcon7a/', description: '' },
+      { name: 'Julia Insua', title: 'CFO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQGLnqK7xbznuA/profile-displayphoto-crop_800_800/B4DZf8f5qPH8AI-/0/1752287911462?e=1757548800&v=beta&t=hVkdEydiBPbYBTXOrHEkfRQMoqhEYjyAOBd4SNMT9ME', linkedinUrl: 'https://www.linkedin.com/in/julia-insua/', description: 'I believe in the power of startups to transform industries, and my mission is to give them the financial structure they need to scale successfully. As Co-Founder and CFO of Quix, I know the secret lies in combining data, strategy, and vision. With over eight years of experience working with globally expanding startups, I have built robust financial models, efficient tax structures, and optimized due diligence processes from the ground up, enabling agile and sustainable growth. My focus on process optimization ensures accurate and timely financial information, which is key to decision-making in dynamic environments.' },
+      { name: 'Santiago Gómez Osorio', title: 'CRO & Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQFw7l1P3d9G2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1604692538151?e=1757548800&v=beta&t=AnGQB41hZS_HDBC5jZLPOygpY2RDGzMxIUSeQRjHMk0', linkedinUrl: 'https://www.linkedin.com/in/santiagogomezosorio/', description: '' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    pdfUrl: PDF_SAMPLE_URL,
+    imageUrl: '/src/assets/visual/visual_quix.png',
+    pdfUrl: '',
   },
   {
     id: 5,
     name: 'Vera',
+    category: 'HealthTech / SaaS',
+    description: 'Vera automates financial risk assessments, helping banks make credit decisions 100x faster — from 60 days to just hours.',
+    longDescription: 'Vera is the new highway for banks, lenders, and enterprises to turn data into fast, actionable credit decisions. Our AI-powered platform automates financial risk assessments, reducing underwriting time from 60 days to just a few hours — giving traditional institutions fintech-level speed and efficiency.',
+    features: [
+      "100x faster credit decisions — from weeks to hours",
+      "Live beta with pilot banks in progress",
+      "Herramientas de seguimiento de progreso emocional.",
+      "Acceso a recursos y materiales de autoayuda."
+    ],
+    extraParagraph: '',
+    logoIncludesName: true,
+    logo: Salud360Logo,
+    calendlyLink: 'https://calendly.com/utec-ventures/vera-intro',
+    teamSize: 2,
+    founders: [
+      { name: 'Founder Ocho', title: 'CEO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera1', linkedinUrl: '#', description: 'Impulsa la misión de Vera de hacer accesible la salud mental de calidad, combinando experiencia en el sector salud y gestión empresarial.' },
+      { name: 'Founder Nueve', title: 'CPO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera2', linkedinUrl: '#', description: 'Responsable del producto y la tecnología, enfocado en desarrollar el algoritmo de matching y una plataforma segura y fácil de usar para pacientes y terapeutas.' },
+    ],
+    imageUrl: '/src/assets/visual/visual_vera.png',
+    pdfUrl: '',
+  },
+    {
+    id: 5,
+    name: 'NOS',
     category: 'HealthTech / SaaS',
     description: 'Plataforma SaaS que conecta pacientes con especialistas de la salud mental a través de un matching con IA para terapias más efectivas.',
     longDescription: 'Vera es una plataforma de bienestar emocional que utiliza inteligencia artificial para conectar a las personas con el psicólogo o terapeuta ideal para sus necesidades. A través de un cuestionario detallado y algoritmos de matching, aseguramos una alta compatibilidad, mejorando la adherencia y los resultados de la terapia. Ofrecemos sesiones online seguras y un seguimiento continuo del progreso.',
@@ -108,6 +139,8 @@ export const PROJECTS: ProjectType[] = [
       "Herramientas de seguimiento de progreso emocional.",
       "Acceso a recursos y materiales de autoayuda."
     ],
+    extraParagraph: '',
+    logoIncludesName: true,
     logo: Salud360Logo,
     calendlyLink: 'https://calendly.com/utec-ventures/vera-intro',
     teamSize: 2,
@@ -115,7 +148,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Founder Ocho', title: 'CEO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera1', linkedinUrl: '#', description: 'Impulsa la misión de Vera de hacer accesible la salud mental de calidad, combinando experiencia en el sector salud y gestión empresarial.' },
       { name: 'Founder Nueve', title: 'CPO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera2', linkedinUrl: '#', description: 'Responsable del producto y la tecnología, enfocado en desarrollar el algoritmo de matching y una plataforma segura y fácil de usar para pacientes y terapeutas.' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1579824217362-4f33a5951a02?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    pdfUrl: PDF_SAMPLE_URL,
+    imageUrl: '/src/assets/visual/visual_nos.png',
+    pdfUrl: '',
   },
 ];

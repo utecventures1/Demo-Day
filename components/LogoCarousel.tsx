@@ -113,7 +113,7 @@ const LogoList: React.FC = () => (
   <div className="flex-shrink-0 flex items-center justify-around"> {/* Usamos justify-around para un espaciado consistente */}
     {LOGOS.map((Logo, index) => (
       <div key={index} className="px-8 lg:px-12"> {/* Añadimos padding para el espaciado en lugar de margin */}
-        <Logo className="h-8 sm:h-9 lg:h-10 transition-opacity duration-300 opacity-70 hover:opacity-100"  />
+        <Logo className="h-8 sm:h-9 lg:h-10 transition-opacity duration-300 opacity-50 hover:opacity-100"  />
       </div>
     ))}
   </div>

@@ -15,3 +15,9 @@
 .animate-scroll-continuous1 {
   animation: scroll 300s linear infinite;
 }
+
+.logo-carousel-section svg path,
+.logo-carousel-section svg circle,
+.logo-carousel-section svg rect {
+  fill: #FFFFFF !important;
+}

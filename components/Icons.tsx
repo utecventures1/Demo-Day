@@ -1,4 +1,8 @@
 import React from 'react';
+import DomusAiLogoComponent  from '../src/assets/logos/domus_ai_w.svg?react';
+import BildinLogoComponent from '../src/assets/logos/bildin_w.svg?react';
+import TalentumLogoComponent from '../src/assets/logos/talentum_w.svg?react';
+import QuixLogoComponent from '../src/assets/logos/quix_w.svg?react';
 
 // Props for any icon component
 interface IconProps {
@@ -42,29 +46,23 @@ export const MindWellLogo: React.FC<IconProps> = ({ className }) => (
     </svg>
 );
 
-export const FinanzaHoyLogo: React.FC<IconProps> = ({ className }) => (
-    <svg className={className} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" rx="20" fill="#161B22"/>
-        <path d="M20 70 L40 50 L60 60 L80 30" stroke="#330072" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="80" cy="30" r="8" fill="#C491FF"/>
-    </svg>
-);
+export const DomusAI: React.FC<IconProps> = ({ className }) => {
+  return <DomusAiLogoComponent className={className} />;
+};
 
-export const AgroConectaLogo: React.FC<IconProps> = ({ className }) => (
-    <svg className={className} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="2" width="96" height="96" rx="15" fill="#161B22" stroke="#374151" strokeWidth="4" />
-        <path d="M50 70C40 60 35 45 50 30C65 45 60 60 50 70Z" fill="#E5E7EB"/>
-        <path d="M50 70 V 85" stroke="#E5E7EB" strokeWidth="6" strokeLinecap="round"/>
-    </svg>
-);
+export const Bildin: React.FC<IconProps> = ({ className }) => {
+  return <BildinLogoComponent className={className} />;
+};
 
-export const EducaFuturoLogo: React.FC<IconProps> = ({ className }) => (
-    <svg className={className} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="48" fill="#161B22" stroke="#374151" strokeWidth="4"/>
-        <path d="M25 75 L50 20 L75 75 Z" fill="none" stroke="#330072" strokeWidth="8" strokeLinejoin="round"/>
-        <path d="M35 60 H 65" stroke="#C491FF" strokeWidth="8" strokeLinecap="round"/>
-    </svg>
-);
+export const talentum: React.FC<IconProps> = ({ className }) => {
+  return <TalentumLogoComponent className={className} />;
+};
+
+export const quix: React.FC<IconProps> = ({ className }) => {
+  return <QuixLogoComponent className={className} />;
+};
+
+
 
 export const Salud360Logo: React.FC<IconProps> = ({ className }) => (
     <svg className={className} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -72,6 +70,9 @@ export const Salud360Logo: React.FC<IconProps> = ({ className }) => (
         <path d="M20 50 H 45 L 55 35 L 65 65 L 75 50 H 90" stroke="#E5E7EB" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 );
+
+
+
 
 export const LinkedInIcon: React.FC<IconProps> = ({ className }) => (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

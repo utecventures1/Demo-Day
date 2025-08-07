@@ -21,4 +21,6 @@ export interface ProjectType {
   founders: Founder[];
   imageUrl: string;
   pdfUrl: string;
+  extraParagraph: string;
+  logoIncludesName: boolean;
 }
