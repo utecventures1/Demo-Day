@@ -1,0 +1,17 @@
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* 
+  Aunque definas la animación aquí, tu componente de React seguirá
+  usando la clase 'animate-scroll-continuous' que pusimos en el JSX.
+  Esta regla CSS le dice al navegador qué hacer cuando encuentre esa clase.
+*/
+.animate-scroll-continuous1 {
+  animation: scroll 300s linear infinite;
+}
