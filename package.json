@@ -19,11 +19,13 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.7.1",
+    "react-scroll": "^1.9.3",
     "resend": "^4.8.0",
     "vite-plugin-svgr": "^4.3.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
+    "@types/react-scroll": "^1.8.10",
     "@vercel/node": "^5.3.11",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"

@@ -21,3 +21,17 @@
 .logo-carousel-section svg rect {
   fill: #FFFFFF !important;
 }
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    /*
+      Volvemos a declararlo aquí para anular las reglas de 'reset'
+      de algunos frameworks que lo establecen en 'auto' dentro de esta media query.
+    */
+    scroll-behavior: smooth !important;
+  }
+}

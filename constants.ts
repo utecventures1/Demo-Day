@@ -25,7 +25,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Piero Luis Arévalo', title: 'COO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQHdDeXlvxVdkA/profile-displayphoto-shrink_800_800/B4EZWz5pVAGgBs-/0/1742479988385?e=1757548800&v=beta&t=JrgsJVWe1i_2A5NsUON6qyZPV_si98pjc_WURRQFRzA', linkedinUrl: 'https://www.linkedin.com/in/piero-luis-ar%C3%A9valo-355ab5143?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2evM2dTwR6CXE37tI3Nrsg%3D%3D', description: 'With over 10 years of experience in senior management roles, Scrum Master, and Product Owner, I have led digitization and digital transformation projects, with a special focus on optimizing processes in marketing, sales, and operations departments at companies of various sizes. My experience in agile project management is complemented by a strong specialization in CRM and CX implementation strategies. I currently serve as partner and COO at Grupo M4G, a Zoho Corporation Premium Partner in Peru, and as COO at Domus AI, where I lead the operation and creation of innovative technologies in building management.' },
     ],
     imageUrl: '/src/assets/visual/visual_domus.png',
-    pdfUrl: '',
+    pdfUrl: '/src/assets/pdfs/domus.pdf',
   },
   {
     id: 2,
@@ -127,7 +127,7 @@ export const PROJECTS: ProjectType[] = [
     imageUrl: '/src/assets/visual/visual_vera.png',
     pdfUrl: '',
   },
-    {
+  {
     id: 5,
     name: 'NOS',
     category: 'HealthTech / SaaS',

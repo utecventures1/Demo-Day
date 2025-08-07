@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
       // +++ SECCIÓN DE PLUGINS +++
       plugins: [
         react(), // Habilita la compilación de React (JSX, Fast Refresh)
-        svgr()   // Habilita la importación de SVGs como componentes
+        svgr(),   // Habilita la importación de SVGs como componentes
       ],
       // --------------------------
 

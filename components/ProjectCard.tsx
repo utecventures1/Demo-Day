@@ -17,7 +17,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       className={`
         bg-[#161B22] border border-gray-800 rounded-xl overflow-hidden
         flex flex-col ${isImageRight ? 'md:flex-row-reverse' : 'md:flex-row'}
-        transition-all duration-300 hover:bg-[#1F2937] hover:border-[#C491FF]
+        transition-all duration-300 hover:bg-[#1F2937] 
+        hover:border-[#fa4616] /* <-- CAMBIO 3: Borde en hover ahora es naranja */
       `}
     >
       {/* Sección de la Imagen */}
@@ -28,10 +29,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       {/* Sección del Contenido */}
       <div className="p-6 flex flex-col flex-grow w-full md:w-3/4">
         
-        {/* ... (resto del contenido superior sin cambios) ... */}
         <div className="w-full">
           <h3 className="text-xl font-bold text-white">{project.name}</h3>
-          <p className="text-sm font-semibold text-[#C491FF] uppercase tracking-wide">{project.category}</p>
+          {/* CAMBIO 2: El color del subtítulo ahora es naranja */ }
+          <p className="text-sm font-semibold text-[#fa4616] uppercase tracking-wide">{project.category}</p>
         </div>
         
         <div className="mt-4 pt-4 border-t border-gray-700 flex-grow">
@@ -40,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           </p>
           <div className="flex items-center text-sm text-gray-400">
             <UsersIcon className="h-5 w-5 mr-2 text-gray-500" />
-            <span>Equipo de {project.teamSize} integrantes</span>
+            <span>Team of {project.teamSize} members</span>
           </div>
         </div>
         
@@ -54,12 +55,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           >
             Intro
           </a>
-          {/* CAMBIO: Eliminamos el onClick de aquí */}
+          
+          {/* CAMBIO 1: Nuevo estilo para el botón "Más Información" */ }
           <Link
             to={`/proyecto/${projectSlug}`}
-            className="w-full sm:w-auto flex-1 text-center px-5 py-2.5 border border-transparent text-sm font-semibold text-white bg-[#330072] rounded-lg hover:bg-[#612ab7] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#330072] focus:ring-offset-[#161B22] transition-all"
+            className="w-full sm:w-auto flex-1 text-center px-5 py-2.5 border border-gray-400 text-sm font-semibold bg-white text-[#161B22] rounded-lg hover:bg-[#fa4616] hover:text-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#fa4616] focus:ring-offset-[#161B22] transition-all"
           >
-            Más Información
+            More Information
           </Link>
         </div>
 
@@ -68,4 +70,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectCard
