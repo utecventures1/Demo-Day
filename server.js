@@ -44,7 +44,7 @@ apiRouter.post('/send-email', async (req, res) => {
   try {
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>', // Usamos el correo de prueba de Resend
-      to: ['bazand25@gmail.com'],
+      to: ['ventures@utec.edu.pe'],
       subject: '🎉 Nuevo Lead Capturado desde la Demo Week!',
       html: `<p>Un nuevo visitante ha dejado su correo electrónico: <strong>${email}</strong></p>`,
     });
