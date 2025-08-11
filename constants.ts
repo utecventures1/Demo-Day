@@ -82,13 +82,10 @@ export const PROJECTS: ProjectType[] = [
     id: 4,
     name: 'Quix',
     category: 'EdTech / AI',
-    description: 'Educación corporativa a medida a través de WhatsApp. Creamos cursos en horas con videos generados por IA para capacitar equipos de forma ágil.',
-    longDescription: 'Quix reinventa la capacitación corporativa utilizando la IA para crear y distribuir micro-cursos a través de WhatsApp. Nuestra plataforma permite a las empresas desarrollar contenido de formación personalizado en cuestión de horas, facilitando un aprendizaje ágil y accesible directamente en los dispositivos móviles de los empleados.',
+    description: 'Tailor-made corporate training via WhatsApp',
+    longDescription: 'Quix is a platform that allows corporations to create customized training programs in less than 24 hours based on their existing knowledge. These programs are delivered via WhatsApp to their employees through microlearning ensuring completion rates of over 80% plus tracking and reporting of their team’s performance.',
     features: [
-      "Creación de cursos en horas, no semanas.",
-      "Distribución de contenido vía WhatsApp.",
-      "Videos y materiales generados por IA.",
-      "Micro-learning para mayor retención."
+      "",
     ],
     extraParagraph: '',
     logoIncludesName: true,
@@ -96,10 +93,10 @@ export const PROJECTS: ProjectType[] = [
     calendlyLink: 'https://calendly.com/utec-ventures/quix-intro',
     teamSize: 4,
     founders: [
-      { name: 'Ignacio Barrea', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQEj2HCQiN_nJg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718273951825?e=1757548800&v=beta&t=tce9LxjxwgMZDm7c2wNoH6MEoKeOA1NzJ4iAAAGF_1s', linkedinUrl: 'https://www.linkedin.com/in/ignaciobarrea/', description: "At Quix, we're pioneering AI-enhanced educational solutions that transform how individuals and organizations learn and grow. My expertise in product development and strategic planning, honed over a decade in tech startups, is central to our mission of advancing learning technologies. Our approach is rooted in agile methodologies and data-driven decision-making, ensuring that our offerings are both innovative and effective." },
-      { name: 'Carlos Alarcón', title: 'CTO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQE_SuNj6_BDGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705954672368?e=1757548800&v=beta&t=p-55WIUA-qa6DW96Cm2-kQozlDnjTRNvvdYZtlqUt9k', linkedinUrl: 'https://www.linkedin.com/in/alarcon7a/', description: '' },
-      { name: 'Julia Insua', title: 'CFO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQGLnqK7xbznuA/profile-displayphoto-crop_800_800/B4DZf8f5qPH8AI-/0/1752287911462?e=1757548800&v=beta&t=hVkdEydiBPbYBTXOrHEkfRQMoqhEYjyAOBd4SNMT9ME', linkedinUrl: 'https://www.linkedin.com/in/julia-insua/', description: 'I believe in the power of startups to transform industries, and my mission is to give them the financial structure they need to scale successfully. As Co-Founder and CFO of Quix, I know the secret lies in combining data, strategy, and vision. With over eight years of experience working with globally expanding startups, I have built robust financial models, efficient tax structures, and optimized due diligence processes from the ground up, enabling agile and sustainable growth. My focus on process optimization ensures accurate and timely financial information, which is key to decision-making in dynamic environments.' },
-      { name: 'Santiago Gómez Osorio', title: 'CRO & Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQFw7l1P3d9G2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1604692538151?e=1757548800&v=beta&t=AnGQB41hZS_HDBC5jZLPOygpY2RDGzMxIUSeQRjHMk0', linkedinUrl: 'https://www.linkedin.com/in/santiagogomezosorio/', description: '' },
+      { name: 'Ignacio Barrea', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQEj2HCQiN_nJg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718273951825?e=1757548800&v=beta&t=tce9LxjxwgMZDm7c2wNoH6MEoKeOA1NzJ4iAAAGF_1s', linkedinUrl: 'https://www.linkedin.com/in/ignaciobarrea/', description: "Has C-level experience in some of the largest Edtechs of LatinAmerica." },
+      { name: 'Carlos Alarcón', title: 'CTO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQE_SuNj6_BDGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705954672368?e=1757548800&v=beta&t=p-55WIUA-qa6DW96Cm2-kQozlDnjTRNvvdYZtlqUt9k', linkedinUrl: 'https://www.linkedin.com/in/alarcon7a/', description: 'Is a Google Developer Expert, Microsoft MVP, and has led engineering teams in Edtechs.' },
+      { name: 'Julia Insua', title: 'CFO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQGLnqK7xbznuA/profile-displayphoto-crop_800_800/B4DZf8f5qPH8AI-/0/1752287911462?e=1757548800&v=beta&t=hVkdEydiBPbYBTXOrHEkfRQMoqhEYjyAOBd4SNMT9ME', linkedinUrl: 'https://www.linkedin.com/in/julia-insua/', description: 'Had led rounds of +50M in Edtechs as well as financial director experience in the field. ' },
+      { name: 'Santiago Gómez', title: 'CRO & Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQFw7l1P3d9G2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1604692538151?e=1757548800&v=beta&t=AnGQB41hZS_HDBC5jZLPOygpY2RDGzMxIUSeQRjHMk0', linkedinUrl: 'https://www.linkedin.com/in/santiagogomezosorio/', description: 'Has experience in Business Development in large startups, accelerators and VCs.' },
     ],
     imageUrl: '/src/assets/visual/visual_quix.png',
     pdfUrl: '',
@@ -107,7 +104,7 @@ export const PROJECTS: ProjectType[] = [
   {
     id: 5,
     name: 'Vera',
-    category: 'HealthTech / SaaS',
+    category: 'Fintech',
     description: 'Vera automates financial risk assessments, helping banks make credit decisions 100x faster — from 60 days to just hours.',
     longDescription: 'Vera is the new highway for banks, lenders, and enterprises to turn data into fast, actionable credit decisions. Our AI-powered platform automates financial risk assessments, reducing underwriting time from 60 days to just a few hours — giving traditional institutions fintech-level speed and efficiency.',
     features: [
@@ -122,8 +119,8 @@ export const PROJECTS: ProjectType[] = [
     calendlyLink: 'https://calendly.com/utec-ventures/vera-intro',
     teamSize: 2,
     founders: [
-      { name: 'Founder Ocho', title: 'CEO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera1', linkedinUrl: '#', description: 'Impulsa la misión de Vera de hacer accesible la salud mental de calidad, combinando experiencia en el sector salud y gestión empresarial.' },
-      { name: 'Founder Nueve', title: 'CPO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera2', linkedinUrl: '#', description: 'Responsable del producto y la tecnología, enfocado en desarrollar el algoritmo de matching y una plataforma segura y fácil de usar para pacientes y terapeutas.' },
+      { name: 'Rodrigo Bonifaz Muñiz', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQEbcke5S2AItw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1621481164021?e=1757548800&v=beta&t=Pxfl21bRj-LfLO8N6YlA17kolhK_foAJcBrC9p7fDZU', linkedinUrl: 'https://www.linkedin.com/in/rbonifazmuniz/', description: '' },
+      { name: 'Manuel Salazar Massaro', title: 'CTO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4E03AQHsidiHZRM5ag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1563210077304?e=1757548800&v=beta&t=0cbv_R90E5Rz0KTLvrKAZv5bL97GOcAs0ME0GP8DN_4', linkedinUrl: 'https://www.linkedin.com/in/manuel-salazar-massaro-33ba27129/', description: '' },
     ],
     imageUrl: '/src/assets/visual/visual_vera.png',
     pdfUrl: '',
@@ -143,8 +140,9 @@ export const PROJECTS: ProjectType[] = [
     calendlyLink: 'https://calendly.com/utec-ventures/vera-intro',
     teamSize: 2,
     founders: [
-      { name: 'Founder Ocho', title: 'CEO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera1', linkedinUrl: '#', description: 'Impulsa la misión de Vera de hacer accesible la salud mental de calidad, combinando experiencia en el sector salud y gestión empresarial.' },
-      { name: 'Founder Nueve', title: 'CPO & Co-founder', imageUrl: 'https://i.pravatar.cc/150?u=vera2', linkedinUrl: '#', description: 'Responsable del producto y la tecnología, enfocado en desarrollar el algoritmo de matching y una plataforma segura y fácil de usar para pacientes y terapeutas.' },
+      { name: 'José Corso', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQEO8oKrqz_USA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718382526679?e=1757548800&v=beta&t=v1ufvXCC9PIlO8VnjyFBc33zUJFoC0P8kqDNj4GO3jQ', linkedinUrl: 'https://www.linkedin.com/in/jose-corso-1088b317/', description: '' },
+      { name: 'Roxana Kern', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C5603AQFyQyY-MYB6hw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1657128185101?e=1757548800&v=beta&t=20LLEqaVHlcK3g6x7Ac25Kp-rYYJ35AAB8z0X6bMpLc', linkedinUrl: 'https://www.linkedin.com/in/roxanakern/', description: '' },
+      { name: 'Gian Franco Dávila', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQHn5XEBG8Ln1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1671205936281?e=1757548800&v=beta&t=DWL1H9VUu0J6DrQBpNuvscuV0-yvY2pTzTM38tRWsHs', linkedinUrl: 'https://www.linkedin.com/in/gian-franco-d%C3%A1vila/', description: '' },    
     ],
     imageUrl: '/src/assets/visual/visual_nos.png',
     pdfUrl: '',
