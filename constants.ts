@@ -1,5 +1,5 @@
 import { ProjectType } from './types';
-import { quix, talentum, DomusAI, Bildin, Salud360Logo } from './components/Icons';
+import { quix, talentum, DomusAI, Bildin, vera, Nos } from './components/Icons';
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -31,15 +31,16 @@ export const PROJECTS: ProjectType[] = [
     id: 2,
     name: 'Bildin',
     category: 'ConstructionTech / SaaS',
-    description: 'Plataforma SaaS que optimiza la gestión en construcción con seguimiento en tiempo real de productividad y rendimiento para mejorar la eficiencia.',
-    longDescription: 'Bildin es un software basado en la nube para la gestión de recursos en la construcción. Nuestra plataforma permite a los gerentes de proyecto monitorear el progreso, administrar equipos y optimizar la asignación de recursos en tiempo real, lo que lleva a una mayor eficiencia y a la finalización de proyectos a tiempo y dentro del presupuesto.',
+    description: 'Bildin uses AI and digital construction models to track labor and materials in real time — cutting waste, boosting productivity, and saving projects millions.',
+    longDescription: 'Bildin is a construction tech platform that uses AI and digital project models to predict and optimize productivity and costs. Through two integrated modules — Workforce Track and Material Track — we monitor labor performance and material usage in real time, alerting teams to inefficiencies and waste before they escalate.',
     features: [
-      "Seguimiento de productividad en tiempo real.",
-      "Gestión de equipos y asignación de tareas.",
-      "Control de inventario de materiales.",
-      "Reportes de rendimiento detallados."
+      "18 active clients, including JJC, Madrid Edificaciones, and Santa Lucia",
+      "$11.3K MRR — potential to reach $34.8K MRR with current clients",
+      "Workforce Track: geolocated attendance, productivity alerts, payroll integration",
+      "120+ admin hours saved per month per client",
+      "Targeting 71K mid-to-large construction companies in LATAM"
     ],
-    extraParagraph: '',
+    extraParagraph: 'Vision: Become the AI-driven operating system for construction, where every project is delivered on time, on budget, and without waste.',
     logoIncludesName: true,
     logo: Bildin,
     calendlyLink: 'https://calendly.com/utec-ventures/bildin-intro',
@@ -117,7 +118,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     extraParagraph: '',
     logoIncludesName: true,
-    logo: Salud360Logo,
+    logo: vera,
     calendlyLink: 'https://calendly.com/utec-ventures/vera-intro',
     teamSize: 2,
     founders: [
@@ -128,20 +129,17 @@ export const PROJECTS: ProjectType[] = [
     pdfUrl: '',
   },
   {
-    id: 5,
+    id: 6,
     name: 'NOS',
-    category: 'HealthTech / SaaS',
-    description: 'Plataforma SaaS que conecta pacientes con especialistas de la salud mental a través de un matching con IA para terapias más efectivas.',
-    longDescription: 'Vera es una plataforma de bienestar emocional que utiliza inteligencia artificial para conectar a las personas con el psicólogo o terapeuta ideal para sus necesidades. A través de un cuestionario detallado y algoritmos de matching, aseguramos una alta compatibilidad, mejorando la adherencia y los resultados de la terapia. Ofrecemos sesiones online seguras y un seguimiento continuo del progreso.',
+    category: 'FinTech',
+    description: 'It transforms informal finance into traceable credit data, with more than 1,800 active users already managing more than S/4 million in savings and community loans in rural LATAM.',
+    longDescription: 'NOS is a SaaS platform that transforms the informal finances of rural communities into traceable credit data. In a context where millions of people are excluded from the financial system, communities are already organizing themselves into savings and credit groups. NOS digitizes these groups, records their transactions, and builds a reliable history that allows its members to connect with formal credit. We have already traced more than S/4M in financial transactions and today we seek to scale to become the community-based financial infrastructure in Latin America.',
     features: [
-      "Matching inteligente entre pacientes y terapeutas.",
-      "Sesiones de terapia online 100% seguras y confidenciales.",
-      "Herramientas de seguimiento de progreso emocional.",
-      "Acceso a recursos y materiales de autoayuda."
+
     ],
     extraParagraph: '',
     logoIncludesName: true,
-    logo: Salud360Logo,
+    logo: Nos,
     calendlyLink: 'https://calendly.com/utec-ventures/vera-intro',
     teamSize: 2,
     founders: [
