@@ -22,7 +22,7 @@ export const PROJECTS: ProjectType[] = [
     teamSize: 2,
     founders: [
       { name: 'Matías Calmet Arana Cisneros', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQENSbTTnyi_mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728092120239?e=1757548800&v=beta&t=aoldIGKKonk7_I_2o1UT-vF_Enp96Ti4kqPvNj1tQ9U', linkedinUrl: 'https://www.linkedin.com/in/mat%C3%ADas-calmet-arana-cisneros-a1107b177/', description: 'Civil engineer co-founder of Bildin, software as a service that integrates and optimizes planning , cost and quality processes for building projects in the construction phase.' },
-      { name: 'Ana Paula Gamarra Casalino', title: 'Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4E03AQEXHeEG5DU77g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1642873282331?e=1757548800&v=beta&t=u3MG5wYLRTYacUAyrWtKieUzg0jnRP85qQSbng3ePIo', linkedinUrl: 'https://www.linkedin.com/in/anagamarra/', description: '' },
+      { name: 'Daniel Veran Leigh', title: 'Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQGnOGl5po6Ozw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1688429459678?e=1757548800&v=beta&t=Exb-5x9D_v18KOIsEecCJm3Wk4oJ89Gqc5ZgAXqWsnw', linkedinUrl: 'https://www.linkedin.com/in/daniel-veran-leigh-160b08b6/', description: '' },
       { name: 'Alejandro Goicochea', title: 'CTO', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQFJGmKfjdC4rQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721696619751?e=1757548800&v=beta&t=SFZ1QbSXiN7aQyPVqZy_d2_jOwgevoBrbi2ozzD90oI', linkedinUrl: 'https://www.linkedin.com/in/alejandrogh97/', description: "I am a software developer with over 3 years of experience and outstanding skills in critical thinking and problem-solving. Additionally, I hold a Bachelor's degree in Computer Science and possess an advanced level of English. My interest lies in participating in software development projects where I can be involved in the entire product creation process and deliver value to customers." },
     ],
     imageUrl: '/visual/visual_bildin.png',
@@ -83,8 +83,13 @@ export const PROJECTS: ProjectType[] = [
     name: 'Quix',
     category: 'EdTech / AI',
     description: 'Tailor-made corporate training via WhatsApp',
-    longDescription: 'Quix is a platform that allows corporations to create customized training programs in less than 24 hours based on their existing knowledge. These programs are delivered via WhatsApp to their employees through microlearning ensuring completion rates of over 80% plus tracking and reporting of their team’s performance.',
+    longDescription: 'Quix is a platform that allows corporations to create customized training programs based on their existing knowledge. These programs are delivered via WhatsApp to employees through microlearning.',
     features: [
+      'Create customized training programs in less than 24 hours.',
+      'Achieve completion rates of over 80%.',
+      'Track and report on team performance.',
+      'Deliver training directly through WhatsApp.',
+      'MRR USD 21,000+'
     ],
     extraParagraph: '',
     logoIncludesName: true,
@@ -129,19 +134,21 @@ export const PROJECTS: ProjectType[] = [
     name: 'NOS',
     category: 'FinTech',
     description: 'It transforms informal finance into traceable credit data, with more than 1,800 active users already managing more than S/4 million in savings and community loans in rural LATAM.',
-    longDescription: 'NOS is a SaaS platform that transforms the informal finances of rural communities into traceable credit data. In a context where millions of people are excluded from the financial system, communities are already organizing themselves into savings and credit groups. NOS digitizes these groups, records their transactions, and builds a reliable history that allows its members to connect with formal credit. We have already traced more than S/4M in financial transactions and today we seek to scale to become the community-based financial infrastructure in Latin America.',
+    longDescription: 'NOS is a SaaS platform that transforms the informal finances of rural communities into traceable credit data. By digitizing existing savings and credit groups, NOS records their transactions and builds a reliable history that allows its members to connect with formal credit.',
     features: [
-
+      'Traced more than S/4M in financial transactions.',
+      'Digitizes informal community savings and credit groups.',
+      'Builds reliable financial histories to connect members with formal credit.',
+      'Provides a pathway for millions excluded from the financial system.'
     ],
-    extraParagraph: '',
+    extraParagraph: 'Our vision: to scale and become the community-based financial infrastructure in Latin America.',
     logoIncludesName: true,
     logo: Nos,
-    calendlyLink: 'https://calendly.com/utec-ventures/vera-intro',
+    calendlyLink: 'https://calendly.com/josecorso/30min',
     teamSize: 2,
     founders: [
-      { name: 'José Corso', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQEO8oKrqz_USA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718382526679?e=1757548800&v=beta&t=v1ufvXCC9PIlO8VnjyFBc33zUJFoC0P8kqDNj4GO3jQ', linkedinUrl: 'https://www.linkedin.com/in/jose-corso-1088b317/', description: '' },
-      { name: 'Roxana Kern', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C5603AQFyQyY-MYB6hw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1657128185101?e=1757548800&v=beta&t=20LLEqaVHlcK3g6x7Ac25Kp-rYYJ35AAB8z0X6bMpLc', linkedinUrl: 'https://www.linkedin.com/in/roxanakern/', description: '' },
-      { name: 'Gian Franco Dávila', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQHn5XEBG8Ln1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1671205936281?e=1757548800&v=beta&t=DWL1H9VUu0J6DrQBpNuvscuV0-yvY2pTzTM38tRWsHs', linkedinUrl: 'https://www.linkedin.com/in/gian-franco-d%C3%A1vila/', description: '' },    
+      { name: 'José Corso', title: 'CEO & Co-founder', imageUrl: '/founders/nos/jose.png', linkedinUrl: 'https://www.linkedin.com/in/jose-corso-1088b317/', description: '' },
+      { name: 'Gian Franco Dávila', title: 'COO & Co-founder', imageUrl: '/founders/nos/gianfranco.jpg', linkedinUrl: 'https://www.linkedin.com/in/gian-franco-d%C3%A1vila/', description: '' },    
     ],
     imageUrl: '/visual/visual_nos.png',
     pdfUrl: '',
