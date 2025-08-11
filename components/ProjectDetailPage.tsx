@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import { ProjectType } from '../types';
 import { ArrowLeftIcon, LinkedInIcon } from './Icons';
-import PdfViewer from './PdfViewer';
+// import PdfViewer from './PdfViewer'; // Opcional: Ya no lo usamos, se puede borrar la importación.
 
 const ProjectDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>(); 
@@ -17,7 +17,7 @@ const ProjectDetailPage: React.FC = () => {
   if (!project) {
     return (
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 text-center">
-        <h1 className="text-3xl font-bold">Proyecto no encontrado</h1>
+        <h1 className="text-3xl font-bold">Project not found</h1>
       </div>
     );
   }
@@ -25,29 +25,18 @@ const ProjectDetailPage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       
-      {/* 
-        Contenedor Padre:
-        Este nuevo div envuelve todo el contenido de la página de detalle.
-        Lleva las clases de ancho y centrado para que todo lo que esté adentro se alinee correctamente.
-      */}
       <div className="md:w-5/6 lg:w-5/6 mx-auto">
       
-        {/* Botón de Volver */}
         <div>
           <button
             onClick={handleBack}
             className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-[#fa4616] transition-colors"
           >
             <ArrowLeftIcon className="h-5 w-5" />
-            Volver a Proyectos
+            Return to Projects
           </button>
         </div>
 
-        {/* 
-          Tarjeta de Contenido Principal:
-          Le hemos quitado las clases de ancho (w-*) y centrado (mx-auto)
-          porque ahora las hereda de su nuevo contenedor padre.
-        */}
         <div className="bg-[#161B22] border border-gray-800 rounded-2xl shadow-lg overflow-hidden p-6 md:p-12 lg:p-16">
           <div>
             {/* Header: Name and Logo */}
@@ -85,35 +74,57 @@ const ProjectDetailPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Project Proposal PDF */}
+          {/* 
+            --- CAMBIO 1: SECCIÓN DE PDF OCULTA ---
+            He comentado toda la sección del visor de PDF. 
+            Si quieres volver a usarla en el futuro, solo quita los comentarios.
+          */}
+          {/* 
           <div className="mt-10 mb-12">
-            <h3 className="text-center text-2xl font-bold mb-8 bg-gradient-to-r from-[#fa4616] to-[#330072] bg-clip-text text-transparent">Propuesta del Proyecto</h3>
+            <h3 className="text-center text-2xl font-bold mb-8 ...">Propuesta del Proyecto</h3>
             <PdfViewer url={project.pdfUrl} />
           </div>
+          */}
           
-          {/* Action Button */}
-          <div className="flex justify-center mb-12">
+          {/* 
+            --- CAMBIO 2: BOTONES DE ACCIÓN MODIFICADOS ---
+            - Se ha creado un contenedor flex para alinear los dos botones.
+            - El botón de Agendar Intro fue traducido.
+            - Se ha añadido un nuevo botón "Deck" con un estilo secundario.
+          */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12 mb-12">
               <a
                   href={project.calendlyLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full max-w-xs lg:max-w-md text-center px-6 py-3 lg:px-10 lg:py-4 border border-transparent text-base lg:text-xl font-semibold text-white bg-[#fa4616] rounded-lg hover:bg-[#e13d0f] transition-all shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#fa4616] focus:ring-offset-[#161B22]"
+                  className="w-full sm:w-auto px-8 py-3 border border-transparent text-base font-semibold text-white bg-[#fa4616] rounded-lg hover:bg-[#e13d0f] transition-all shadow-md"
               >
-                  Agendar Intro
+                  Schedule Intro
+              </a>
+              <a
+                  href={project.pdfUrl} // Apunta a la URL del PDF del proyecto
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-8 py-3 border border-gray-400 text-base font-semibold text-gray-300 bg-transparent rounded-lg hover:bg-gray-800 hover:text-white transition-all"
+              >
+                   Deck
               </a>
           </div>
 
 
-          {/* Founders */}
+          {/* 
+            --- CAMBIO 3: NUEVO LAYOUT FLEXIBLE PARA FUNDADORES ---
+            - Eliminamos la distinción entre 'lg:hidden' y 'hidden lg:flex'.
+            - Usamos un único contenedor con `flex-wrap` para que las tarjetas se ajusten solas.
+          */}
           <div className="border-t border-gray-700 pt-10 text-center">
-              <h2 className="inline-block text-2xl font-bold mb-8 bg-gradient-to-r from-[#fa4616] to-[#330072] bg-clip-text text-transparent">Conoce a los Fundadores</h2>
+              <h2 className="inline-block text-2xl font-bold mb-8 bg-gradient-to-r from-[#fa4616] to-[#330072] bg-clip-text text-transparent">Meet the Founders</h2>
 
-              {/* Mobile and Tablet View */}
-              <div className="flex flex-wrap justify-center gap-8 lg:hidden">
+              <div className="flex flex-wrap justify-center gap-8">
                   {project.founders.map(founder => (
-                      <div key={founder.name} className="w-72 overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 group bg-[#1F2937]">
+                      <div key={founder.name} className="w-full max-w-xs sm:w-72 overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 group bg-[#1F2937]">
                           <div className="relative">
-                              <img src={founder.imageUrl} alt={`Foto de ${founder.name}`} className="w-full h-64 object-cover" />
+                              <img src={founder.imageUrl} alt={`Foto de ${founder.name}`} className="w-full h-64 object-cover object-top" />
                               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
                           </div>
                           <div className="p-4">
@@ -130,33 +141,9 @@ const ProjectDetailPage: React.FC = () => {
                       </div>
                   ))}
               </div>
-              
-              {/* Desktop View */}
-              <div className="hidden lg:flex flex-col gap-8">
-                {project.founders.map(founder => (
-                  <div key={founder.name} className="bg-[#1F2937] rounded-xl flex items-stretch text-left transition-all duration-300 hover:shadow-2xl hover:bg-gray-800/60">
-                    <img src={founder.imageUrl} alt={`Foto de ${founder.name}`} className="w-48 h-auto object-cover rounded-l-xl flex-shrink-0" />
-                    <div className="p-6 flex flex-col flex-grow">
-                      <div className="flex justify-between items-start gap-4">
-                        <div>
-                          <h4 className="text-xl font-bold text-white">{founder.name}</h4>
-                          <p className="text-base text-gray-400">{founder.title}</p>
-                        </div>
-                        <a href={founder.linkedinUrl} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-md text-gray-300 hover:bg-white/10 hover:text-[#fa4616] transition-colors flex-shrink-0">
-                          <LinkedInIcon className="w-7 h-7"/>
-                        </a>
-                      </div>
-                      <p className="mt-3 text-gray-300 text-sm flex-grow text-justify">
-                        {founder.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
           </div>
         </div>
-
-      </div> {/* <-- Cierre del contenedor padre */}
+      </div>
     </div>
   );
 };

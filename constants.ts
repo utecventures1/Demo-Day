@@ -4,31 +4,6 @@ import { quix, talentum, DomusAI, Bildin, vera, Nos } from './components/Icons';
 export const PROJECTS: ProjectType[] = [
   {
     id: 1,
-    name: 'Domus AI',
-    category: 'PropTech / AI',
-    description: 'Run buildings on autopilot — Domus AI automates billing, maintenance, and resident support for property managers via WhatsApp.',
-    longDescription: 'Domus AI automates billing, maintenance, and resident support for property managers via AI agents on WhatsApp and phone. Our platform helps teams reduce workload, improve cash flow, and deliver instant service — without adding staff or training.',
-    features: [
-      "9 active clients and $2.5K in (MRR) across Peru, Paraguay, and Mexico.",
-      "AI agents handle collections, incident reports, visitor access, and resident inquiries",
-      "Integrated with leading SaaS tools — no downloads, no learning curve",
-      "Backed by UTEC Ventures, Snitch Ventures, and angel investors",
-      "Founders: ex-Zoho COO and $1.4M ARR spin-off CEO; serial entrepreneurs with SaaS and AI experience"
-    ],
-    extraParagraph: 'Our vision: to become the AI-powered operating system for buildings — enabling fully automated, scalable property management for a vertical future.',
-    logoIncludesName: true,
-    logo: DomusAI, 
-    calendlyLink: 'https://calendly.com/utec-ventures/domus-ai-intro',
-    teamSize: 2,
-    founders: [
-      { name: 'Samuele Soto Cannatà', title: 'CEO & Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQErR1xGAZWBBQ/profile-displayphoto-crop_800_800/B4EZf.w4O8H4AI-/0/1752325918783?e=1757548800&v=beta&t=3jLGqlruKARrnv5wCQ0rXWZzrx48Hw1_O7FliUrEFcw', linkedinUrl: 'https://www.linkedin.com/in/samuelescb/', description: 'Delivering AI agents to automate every building in the world.' },
-      { name: 'Piero Luis Arévalo', title: 'COO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQHdDeXlvxVdkA/profile-displayphoto-shrink_800_800/B4EZWz5pVAGgBs-/0/1742479988385?e=1757548800&v=beta&t=JrgsJVWe1i_2A5NsUON6qyZPV_si98pjc_WURRQFRzA', linkedinUrl: 'https://www.linkedin.com/in/piero-luis-ar%C3%A9valo-355ab5143?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2evM2dTwR6CXE37tI3Nrsg%3D%3D', description: 'With over 10 years of experience in senior management roles, Scrum Master, and Product Owner, I have led digitization and digital transformation projects, with a special focus on optimizing processes in marketing, sales, and operations departments at companies of various sizes. My experience in agile project management is complemented by a strong specialization in CRM and CX implementation strategies. I currently serve as partner and COO at Grupo M4G, a Zoho Corporation Premium Partner in Peru, and as COO at Domus AI, where I lead the operation and creation of innovative technologies in building management.' },
-    ],
-    imageUrl: '/src/assets/visual/visual_domus.png',
-    pdfUrl: '/src/assets/pdfs/domus.pdf',
-  },
-  {
-    id: 2,
     name: 'Bildin',
     category: 'ConstructionTech / SaaS',
     description: 'Bildin uses AI and digital construction models to track labor and materials in real time — cutting waste, boosting productivity, and saving projects millions.',
@@ -50,11 +25,11 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Ana Paula Gamarra Casalino', title: 'Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4E03AQEXHeEG5DU77g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1642873282331?e=1757548800&v=beta&t=u3MG5wYLRTYacUAyrWtKieUzg0jnRP85qQSbng3ePIo', linkedinUrl: 'https://www.linkedin.com/in/anagamarra/', description: '' },
       { name: 'Alejandro Goicochea', title: 'CTO', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQFJGmKfjdC4rQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721696619751?e=1757548800&v=beta&t=SFZ1QbSXiN7aQyPVqZy_d2_jOwgevoBrbi2ozzD90oI', linkedinUrl: 'https://www.linkedin.com/in/alejandrogh97/', description: "I am a software developer with over 3 years of experience and outstanding skills in critical thinking and problem-solving. Additionally, I hold a Bachelor's degree in Computer Science and possess an advanced level of English. My interest lies in participating in software development projects where I can be involved in the entire product creation process and deliver value to customers." },
     ],
-    imageUrl: '/src/assets/visual/visual_bildin.png',
+    imageUrl: '/visual/visual_bildin.png',
     pdfUrl: '',
   },
   {
-    id: 3,
+    id: 2,
     name: 'Talentum',
     category: 'HR Tech / AI',
     description: 'Creamos a Sara, una reclutadora con IA que encuentra, evalúa y contacta a miles de candidatos en segundos, ahorrando tiempo y costos.',
@@ -75,8 +50,33 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Ionatan Engelsberg', title: 'CTO & Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQHvQl2mjnlSEw/profile-displayphoto-shrink_800_800/B4DZV3ziXWHAAg-/0/1741471754231?e=1757548800&v=beta&t=fw-e8aPFmRpOgL2R5TXd_Ls2tEuGNCuy4HGvheef_cI', linkedinUrl: 'https://www.linkedin.com/in/ionatan-engelsberg/', description: 'With a strong background in software engineering and hands-on experience in machine learning, I am passionate about bridging the gap between data engineering and AI to deliver data-driven real value. My journey has equipped me with expertise in API development, database design and management, and developing cutting-edge computer vision deep learning models, RAG chatbots, and end-to-end data pipelines.' },
       { name: 'Martin Lipovetzky', title: 'Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQEoaRaMvFHGNA/profile-displayphoto-shrink_800_800/B4DZWBgQUIHkAc-/0/1741634471636?e=1757548800&v=beta&t=kOWhh8Qq_Y-sjOL2sUOZ4mqTb52vGUBWlzqa-MFBzLw', linkedinUrl: 'https://www.linkedin.com/in/martin-lipovetzky-b23b5823b/', description: '' },
     ],
-    imageUrl: '/src/assets/visual/visual_talentum.png',
+    imageUrl: '/visual/visual_talentum.png',
     pdfUrl: '',
+  },
+  {
+    id: 3,
+    name: 'Domus AI',
+    category: 'PropTech / AI',
+    description: 'Run buildings on autopilot — Domus AI automates billing, maintenance, and resident support for property managers via WhatsApp.',
+    longDescription: 'Domus AI automates billing, maintenance, and resident support for property managers via AI agents on WhatsApp and phone. Our platform helps teams reduce workload, improve cash flow, and deliver instant service — without adding staff or training.',
+    features: [
+      "9 active clients and $2.5K in (MRR) across Peru, Paraguay, and Mexico.",
+      "AI agents handle collections, incident reports, visitor access, and resident inquiries",
+      "Integrated with leading SaaS tools — no downloads, no learning curve",
+      "Backed by UTEC Ventures, Snitch Ventures, and angel investors",
+      "Founders: ex-Zoho COO and $1.4M ARR spin-off CEO; serial entrepreneurs with SaaS and AI experience"
+    ],
+    extraParagraph: 'Our vision: to become the AI-powered operating system for buildings — enabling fully automated, scalable property management for a vertical future.',
+    logoIncludesName: true,
+    logo: DomusAI, 
+    calendlyLink: 'https://calendly.com/utec-ventures/domus-ai-intro',
+    teamSize: 2,
+    founders: [
+      { name: 'Samuele Soto Cannatà', title: 'CEO & Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQErR1xGAZWBBQ/profile-displayphoto-crop_800_800/B4EZf.w4O8H4AI-/0/1752325918783?e=1757548800&v=beta&t=3jLGqlruKARrnv5wCQ0rXWZzrx48Hw1_O7FliUrEFcw', linkedinUrl: 'https://www.linkedin.com/in/samuelescb/', description: 'Delivering AI agents to automate every building in the world.' },
+      { name: 'Piero Luis Arévalo', title: 'COO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQHdDeXlvxVdkA/profile-displayphoto-shrink_800_800/B4EZWz5pVAGgBs-/0/1742479988385?e=1757548800&v=beta&t=JrgsJVWe1i_2A5NsUON6qyZPV_si98pjc_WURRQFRzA', linkedinUrl: 'https://www.linkedin.com/in/piero-luis-ar%C3%A9valo-355ab5143?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2evM2dTwR6CXE37tI3Nrsg%3D%3D', description: 'With over 10 years of experience in senior management roles, Scrum Master, and Product Owner, I have led digitization and digital transformation projects, with a special focus on optimizing processes in marketing, sales, and operations departments at companies of various sizes. My experience in agile project management is complemented by a strong specialization in CRM and CX implementation strategies. I currently serve as partner and COO at Grupo M4G, a Zoho Corporation Premium Partner in Peru, and as COO at Domus AI, where I lead the operation and creation of innovative technologies in building management.' },
+    ],
+    imageUrl: '/visual/visual_domus.png',
+    pdfUrl: '/pdfs/domus.pdf',
   },
   {
     id: 4,
@@ -85,7 +85,6 @@ export const PROJECTS: ProjectType[] = [
     description: 'Tailor-made corporate training via WhatsApp',
     longDescription: 'Quix is a platform that allows corporations to create customized training programs in less than 24 hours based on their existing knowledge. These programs are delivered via WhatsApp to their employees through microlearning ensuring completion rates of over 80% plus tracking and reporting of their team’s performance.',
     features: [
-      "",
     ],
     extraParagraph: '',
     logoIncludesName: true,
@@ -98,7 +97,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Julia Insua', title: 'CFO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQGLnqK7xbznuA/profile-displayphoto-crop_800_800/B4DZf8f5qPH8AI-/0/1752287911462?e=1757548800&v=beta&t=hVkdEydiBPbYBTXOrHEkfRQMoqhEYjyAOBd4SNMT9ME', linkedinUrl: 'https://www.linkedin.com/in/julia-insua/', description: 'Had led rounds of +50M in Edtechs as well as financial director experience in the field. ' },
       { name: 'Santiago Gómez', title: 'CRO & Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQFw7l1P3d9G2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1604692538151?e=1757548800&v=beta&t=AnGQB41hZS_HDBC5jZLPOygpY2RDGzMxIUSeQRjHMk0', linkedinUrl: 'https://www.linkedin.com/in/santiagogomezosorio/', description: 'Has experience in Business Development in large startups, accelerators and VCs.' },
     ],
-    imageUrl: '/src/assets/visual/visual_quix.png',
+    imageUrl: '/visual/visual_quix.png',
     pdfUrl: '',
   },
   {
@@ -122,7 +121,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Rodrigo Bonifaz Muñiz', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQEbcke5S2AItw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1621481164021?e=1757548800&v=beta&t=Pxfl21bRj-LfLO8N6YlA17kolhK_foAJcBrC9p7fDZU', linkedinUrl: 'https://www.linkedin.com/in/rbonifazmuniz/', description: '' },
       { name: 'Manuel Salazar Massaro', title: 'CTO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4E03AQHsidiHZRM5ag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1563210077304?e=1757548800&v=beta&t=0cbv_R90E5Rz0KTLvrKAZv5bL97GOcAs0ME0GP8DN_4', linkedinUrl: 'https://www.linkedin.com/in/manuel-salazar-massaro-33ba27129/', description: '' },
     ],
-    imageUrl: '/src/assets/visual/visual_vera.png',
+    imageUrl: '/visual/visual_vera.png',
     pdfUrl: '',
   },
   {
@@ -144,7 +143,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Roxana Kern', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C5603AQFyQyY-MYB6hw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1657128185101?e=1757548800&v=beta&t=20LLEqaVHlcK3g6x7Ac25Kp-rYYJ35AAB8z0X6bMpLc', linkedinUrl: 'https://www.linkedin.com/in/roxanakern/', description: '' },
       { name: 'Gian Franco Dávila', title: ' & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQHn5XEBG8Ln1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1671205936281?e=1757548800&v=beta&t=DWL1H9VUu0J6DrQBpNuvscuV0-yvY2pTzTM38tRWsHs', linkedinUrl: 'https://www.linkedin.com/in/gian-franco-d%C3%A1vila/', description: '' },    
     ],
-    imageUrl: '/src/assets/visual/visual_nos.png',
+    imageUrl: '/visual/visual_nos.png',
     pdfUrl: '',
   },
 ];
