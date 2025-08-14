@@ -33,13 +33,14 @@ export const PROJECTS: ProjectType[] = [
     name: 'Talentum',
     category: 'HR Tech / AI',
     description: 'AI Recruiter that takes over 80% of the hiring process by sourcing, vetting and engaging with qualified candidates',
-    longDescription: 'Talentum is an AI recruiter that empowers recruiters to hire faster and better. Sara, our AI Recruiter, automates 80% of the hiring process so recruiters can focus on closing roles and building relationships.',
+    longDescription: 'Talentum is an AI recruiter that empowers recruiters to hire faster and better. Our AI assistant, Sara, automates 80% of the hiring process—from sourcing and vetting to engaging and tracking candidates—freeing up recruiters to concentrate on closing roles and building vital relationships.',
     features: [
-      "Delivers a qualified shortlist in 48–72 hours.",
-      "Engages candidates 24/7 with personalized outreach, achieving response rates 3–4x higher than LinkedIn averages.",
-      "Provides a unified, conversational interface that radically accelerates recruiter workflow.",
-      "Serves recruiting agencies, RPOs, and in-house teams with a monthly subscription per user.",
-      "Has 300 companies on the waitlist and big brands already paying."
+      "Sara delivers a qualified shortlist of candidates within 48–72 hours.",
+      "Engages potential hires 24/7 with personalized outreach.",
+      "Achieves response rates 3–4 times higher than LinkedIn averages.",
+      "Recruiters benefit from a unified, conversational interface that feels human to candidates and radically speeds up their workflow.",
+      "We serve recruiting agencies, RPOs, and in-house teams through a monthly subscription per user.",
+      "With 300 companies on our waitlist and $3,000 MRR growing at over 20% month-over-month, we are raising capital to scale sales."
     ],
     extraParagraph: 'We’re raising capital to scale sales and expand into the $500B+ global recruitment market.',
     logoIncludesName: true,
@@ -104,7 +105,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Santiago Gómez', title: 'CRO & Co-Founder', imageUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQFw7l1P3d9G2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1604692538151?e=1757548800&v=beta&t=AnGQB41hZS_HDBC5jZLPOygpY2RDGzMxIUSeQRjHMk0', linkedinUrl: 'https://www.linkedin.com/in/santiagogomezosorio/', description: 'Has experience in Business Development in large startups, accelerators and VCs.' },
     ],
     imageUrl: '/visual/visual_quix.png',
-    pdfUrl: '',
+    pdfUrl: 'https://docsend.com/v/sxvkg/quix2025',
   },
   {
     id: 5,
@@ -128,7 +129,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Manuel Salazar Massaro', title: 'CTO & Co-founder', imageUrl: '/founders/vera/Manuel-Salazar.JPG', linkedinUrl: 'https://www.linkedin.com/in/manuel-salazar-massaro-33ba27129/', description: '' },
     ],
     imageUrl: '/visual/visual_vera.png',
-    pdfUrl: '',
+    pdfUrl: '/pdfs/vera.pdf',
   },
   {
     id: 6,
@@ -145,11 +146,11 @@ export const PROJECTS: ProjectType[] = [
     extraParagraph: 'Our vision: to scale and become the community-based financial infrastructure in Latin America.',
     logoIncludesName: true,
     logo: Nos,
-    calendlyLink: 'https://calendly.com/josecorso/30min',
+    calendlyLink: 'https://calendly.com/gdavila-utec/new-meeting',
     teamSize: 2,
     founders: [
-      { name: 'José Corso', title: 'CEO & Co-founder', imageUrl: '/founders/nos/jose.png', linkedinUrl: 'https://www.linkedin.com/in/jose-corso-1088b317/', description: '' },
-      { name: 'Gian Franco Dávila', title: 'COO & Co-founder', imageUrl: '/founders/nos/gianfranco.jpg', linkedinUrl: 'https://www.linkedin.com/in/gian-franco-d%C3%A1vila/', description: '' },    
+      { name: 'Gian Franco Dávila', title: 'CEO & Co-founder', imageUrl: '/founders/nos/gianfranco.jpg', linkedinUrl: 'https://www.linkedin.com/in/gian-franco-d%C3%A1vila/', description: '' },    
+      { name: 'José Corso', title: 'COO & Co-founder', imageUrl: '/founders/nos/jose.png', linkedinUrl: 'https://www.linkedin.com/in/jose-corso-1088b317/', description: '' },
     ],
     imageUrl: '/visual/visual_nos.png',
     pdfUrl: '',
