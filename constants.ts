@@ -96,7 +96,7 @@ export const PROJECTS: ProjectType[] = [
     extraParagraph: '',
     logoIncludesName: true,
     logo: quix,
-    calendlyLink: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ39pQlQMKzQZfDy83Mh2-CXHcI_WL8IIYctfOAGJhLApdN7A26rn2-AUEoXykE5ymCr2oTLEUW_',
+    calendlyLink: 'https://calendly.com/santiago-quix/30min',
     teamSize: 4,
     founders: [
       { name: 'Ignacio Barrea', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQEj2HCQiN_nJg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718273951825?e=1757548800&v=beta&t=tce9LxjxwgMZDm7c2wNoH6MEoKeOA1NzJ4iAAAGF_1s', linkedinUrl: 'https://www.linkedin.com/in/ignaciobarrea/', description: "Has C-level experience in some of the largest Edtechs of LatinAmerica." },
