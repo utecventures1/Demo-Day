@@ -26,7 +26,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Alejandro Goicochea', title: 'CTO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQFJGmKfjdC4rQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721696619751?e=1757548800&v=beta&t=SFZ1QbSXiN7aQyPVqZy_d2_jOwgevoBrbi2ozzD90oI', linkedinUrl: 'https://www.linkedin.com/in/alejandrogh97/', description: "I am a software developer with over 3 years of experience and outstanding skills in critical thinking and problem-solving. Additionally, I hold a Bachelor's degree in Computer Science and possess an advanced level of English. My interest lies in participating in software development projects where I can be involved in the entire product creation process and deliver value to customers." },
     ],
     imageUrl: '/visual/visual_bildin.png',
-    pdfUrl: '/pdfs/bildin.pdf',
+    pdfUrl: 'https://docsend.com/view/sirnq4hv2ptrg8ze',
   },
   {
     id: 2,
@@ -96,7 +96,7 @@ export const PROJECTS: ProjectType[] = [
     extraParagraph: '',
     logoIncludesName: true,
     logo: quix,
-    calendlyLink: 'https://calendar.app.google/9o9dnnKjjRZy4Lx28',
+    calendlyLink: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ39pQlQMKzQZfDy83Mh2-CXHcI_WL8IIYctfOAGJhLApdN7A26rn2-AUEoXykE5ymCr2oTLEUW_',
     teamSize: 4,
     founders: [
       { name: 'Ignacio Barrea', title: 'CEO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQEj2HCQiN_nJg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718273951825?e=1757548800&v=beta&t=tce9LxjxwgMZDm7c2wNoH6MEoKeOA1NzJ4iAAAGF_1s', linkedinUrl: 'https://www.linkedin.com/in/ignaciobarrea/', description: "Has C-level experience in some of the largest Edtechs of LatinAmerica." },
