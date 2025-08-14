@@ -129,7 +129,7 @@ export const PROJECTS: ProjectType[] = [
        { name: 'Manuel Salazar Massaro', title: 'CTO & Co-founder', imageUrl: '/founders/vera/Manuel-Salazar.JPG', linkedinUrl: 'https://www.linkedin.com/in/manuel-salazar-massaro-33ba27129/', description: '' },
       ],
     imageUrl: '/visual/visual_vera.png',
-    pdfUrl: '/pdfs/vera.pdf',
+    pdfUrl: 'https://docsend.com/view/g2d3sts69e7fzhwn',
   },
   {
     id: 6,
