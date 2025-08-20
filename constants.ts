@@ -26,7 +26,7 @@ export const PROJECTS: ProjectType[] = [
       { name: 'Alejandro Goicochea', title: 'CTO & Co-founder', imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQFJGmKfjdC4rQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721696619751?e=1757548800&v=beta&t=SFZ1QbSXiN7aQyPVqZy_d2_jOwgevoBrbi2ozzD90oI', linkedinUrl: 'https://www.linkedin.com/in/alejandrogh97/', description: "I am a software developer with over 3 years of experience and outstanding skills in critical thinking and problem-solving. Additionally, I hold a Bachelor's degree in Computer Science and possess an advanced level of English. My interest lies in participating in software development projects where I can be involved in the entire product creation process and deliver value to customers." },
     ],
     imageUrl: '/visual/visual_bildin.png',
-    pdfUrl: 'https://docsend.com/view/sirnq4hv2ptrg8ze',
+    pdfUrl: 'https://docsend.com/view/23gzd2h7nn53pu59',
   },
   {
     id: 2,
