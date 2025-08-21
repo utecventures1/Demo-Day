@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
 
         <AnimatedElement delay={150}>
           <p className="mt-8 max-w-5xl mx-auto text-xl sm:text-2xl lg:text-3xl text-gray-300">
-            Explore the new investments from Utec Ventures acceleration program
+            Explore the new investments from UTEC Ventures acceleration program
           </p>
         </AnimatedElement>
 
