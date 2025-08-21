@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import { ProjectType } from '../types';
 import { ArrowLeftIcon, LinkedInIcon } from './Icons';
-// import PdfViewer from './PdfViewer'; // Opcional: Ya no lo usamos, se puede borrar la importación.
+import VideoPlayer from '../components/videoplayer';
 
 const ProjectDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>(); 
@@ -74,24 +74,16 @@ const ProjectDetailPage: React.FC = () => {
             </div>
           </div>
 
-          {/* 
-            --- CAMBIO 1: SECCIÓN DE PDF OCULTA ---
-            He comentado toda la sección del visor de PDF. 
-            Si quieres volver a usarla en el futuro, solo quita los comentarios.
-          */}
-          {/* 
-          <div className="mt-10 mb-12">
-            <h3 className="text-center text-2xl font-bold mb-8 ...">Propuesta del Proyecto</h3>
-            <PdfViewer url={project.pdfUrl} />
-          </div>
-          */}
-          
-          {/* 
-            --- CAMBIO 2: BOTONES DE ACCIÓN MODIFICADOS ---
-            - Se ha creado un contenedor flex para alinear los dos botones.
-            - El botón de Agendar Intro fue traducido.
-            - Se ha añadido un nuevo botón "Deck" con un estilo secundario.
-          */}
+          {/* Renderizado condicional: solo muestra esta sección si el proyecto tiene una URL de video */}
+          {project.videoEmbedUrl && (
+            <div className="mt-10 mb-12">
+              <h3 className="text-center text-2xl font-bold mb-8 text-white">
+                Video de Presentación
+              </h3>
+              <VideoPlayer embedUrl={project.videoEmbedUrl} title={`Presentación de ${project.name}`} />
+            </div>
+          )}
+
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12 mb-12">
               <a
                   href={project.calendlyLink}

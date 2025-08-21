@@ -23,4 +23,5 @@ export interface ProjectType {
   pdfUrl: string;
   extraParagraph: string;
   logoIncludesName: boolean;
+  videoEmbedUrl: string
 }

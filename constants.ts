@@ -27,6 +27,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_bildin.png',
     pdfUrl: 'https://docsend.com/view/23gzd2h7nn53pu59',
+    videoEmbedUrl: ""
   },
   {
     id: 2,
@@ -54,6 +55,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_talentum.png',
     pdfUrl: 'https://docsend.com/v/c42xj/talentum-deck',
+    videoEmbedUrl: ""
   },
   {
     id: 3,
@@ -79,6 +81,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_domus.png',
     pdfUrl: 'https://docsend.com/v/zfcm4/domusaideck',
+    videoEmbedUrl: ""
   },
   {
     id: 4,
@@ -106,6 +109,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_quix.png',
     pdfUrl: 'https://docsend.com/v/sxvkg/quix2025',
+    videoEmbedUrl: ""
   },
   {
     id: 5,
@@ -130,6 +134,7 @@ export const PROJECTS: ProjectType[] = [
       ],
     imageUrl: '/visual/visual_vera.png',
     pdfUrl: 'https://docsend.com/view/g2d3sts69e7fzhwn',
+    videoEmbedUrl: ""
   },
   {
     id: 6,
@@ -154,5 +159,6 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_nos.png',
     pdfUrl: 'https://docsend.com/v/xfnhg/nos_deck_aug25',
+    videoEmbedUrl:""
   },
 ];
