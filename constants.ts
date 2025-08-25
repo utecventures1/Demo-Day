@@ -27,7 +27,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_bildin.png',
     pdfUrl: 'https://docsend.com/view/23gzd2h7nn53pu59',
-    videoEmbedUrl: ""
+    videoEmbedUrl: "https://www.youtube.com/embed/rCcIYGAbNJc?si=27qjchCrT1BoDAQg"
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_talentum.png',
     pdfUrl: 'https://docsend.com/v/c42xj/talentum-deck',
-    videoEmbedUrl: ""
+    videoEmbedUrl: "https://www.youtube.com/embed/MhnfFkS6FZw?si=w1Vx2Ybui7P9g_jg"
   },
   {
     id: 3,
@@ -81,7 +81,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_domus.png',
     pdfUrl: 'https://docsend.com/v/zfcm4/domusaideck',
-    videoEmbedUrl: ""
+    videoEmbedUrl: "https://www.youtube.com/embed/wMrrHkjcowk?si=9kx-Zg3_C35YtFQK"
   },
   {
     id: 4,
@@ -109,7 +109,7 @@ export const PROJECTS: ProjectType[] = [
     ],
     imageUrl: '/visual/visual_quix.png',
     pdfUrl: 'https://docsend.com/v/sxvkg/quix2025',
-    videoEmbedUrl: ""
+    videoEmbedUrl: "https://www.youtube.com/embed/c8zaBTXMiI4?si=vqalFI-Q4HSG4pVp"
   },
   {
     id: 5,
@@ -134,7 +134,7 @@ export const PROJECTS: ProjectType[] = [
       ],
     imageUrl: '/visual/visual_vera.png',
     pdfUrl: 'https://docsend.com/view/g2d3sts69e7fzhwn',
-    videoEmbedUrl: ""
+    videoEmbedUrl: "https://www.youtube.com/embed/e3DH7sL7g0w"
   },
   {
     id: 6,

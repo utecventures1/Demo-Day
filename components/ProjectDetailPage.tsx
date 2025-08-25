@@ -77,9 +77,6 @@ const ProjectDetailPage: React.FC = () => {
           {/* Renderizado condicional: solo muestra esta sección si el proyecto tiene una URL de video */}
           {project.videoEmbedUrl && (
             <div className="mt-10 mb-12">
-              <h3 className="text-center text-2xl font-bold mb-8 text-white">
-                Video de Presentación
-              </h3>
               <VideoPlayer embedUrl={project.videoEmbedUrl} title={`Presentación de ${project.name}`} />
             </div>
           )}
