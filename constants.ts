@@ -151,7 +151,7 @@ export const PROJECTS: ProjectType[] = [
     extraParagraph: 'Our vision: to scale and become the community-based financial infrastructure in Latin America.',
     logoIncludesName: true,
     logo: Nos,
-    calendlyLink: 'https://calendly.com/gdavila-utec/new-meeting',
+    calendlyLink: 'https://calendly.com/gdavila-nosfinance/30min',
     teamSize: 2,
     founders: [
       { name: 'Gian Franco Dávila', title: 'CEO & Co-founder', imageUrl: '/founders/nos/gianfranco.jpg', linkedinUrl: 'https://www.linkedin.com/in/gian-franco-d%C3%A1vila/', description: '' },    
